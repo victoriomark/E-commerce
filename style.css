@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: 'poppins',sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header{
+background-color: #F4FEFD;
+display: flex;
+width: 40%;
+padding: 10px;
+align-items: center;
+justify-content: center;
+position: fixed;
+top: 1.7vh;
+z-index: 99999999999999999999;
+border-radius: 5px;
+}
+nav ul{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+     
+}
+a{
+    text-decoration: none;
+    color: #1B2223;
+    font-weight: 700;
+
+    
+}
+body{
+    background-color: #1B2223; 
+}
+.hero{
+    width: 100%;
+    display: flex;
+    margin-top: 14vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.hero .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #F4FEFD;
+}
+
+.content p{
+    width: 100vh;
+}
+.btn{
+    display: flex;
+    gap: 1rem;
+}
+.btn button{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+.shop{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.shop .card{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #F4FEFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    transition: 1s;
+
+}
+.pic img{
+    border-radius: 20% 0;
+}
+.card .pic{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   align-items: center;
+ 
+}
+nav a:hover{
+    background-color: #1B2223;
+    color: #F4FEFD;
+    padding: 4px;
+    border-radius: 10px 0;
+}
+.pic img{
+    object-fit: cover;
+    width: 100%;
+}
+.info p{
+    padding: 10px;
+}
+.card .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #1B2223;
+}
+.x{
+    justify-content: space-between;
+    padding: 10px;
+}
+.x button{
+    width: 90px;
+    color: #1B2223;
+}
+button:active{
+    transform: rotate(2.4deg);
+}
+.shop .card:hover{
+    transform: rotate(1.5deg);
+}
+footer{
+    background:#F4FEFD ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+footer ul li a{
+    background-color: #1B2223;
+    padding: 13px;
+    color: #F4FEFD;
+    border-radius: 50%;
+}
+@media (width <= 414px){
+    .shop{
+        display: grid;
+        place-items: center;
+    }
+    .shop .card{
+        width: 100%;
+        border: none;
+    }
+    header{
+        width: 100%;
+    }
+    .hero{
+        display: grid;
+        place-items: center;
+    }
+    .hero .content{
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .content p{
+      width: 70%;
+    }
+}
+
+
+@media (width <= 320px){
+    .shop{
+        display: grid;
+        place-items: center;
+    }
+    .shop .card{
+        width: 100%;
+        border: none;
+    }
+    header{
+        width: 100%;
+    }
+    header nav ul li a{
+        font-size: 0.7em;
+    }
+    .hero{
+        display: grid;
+        place-items: center;
+    }
+    .hero .content{
+        text-align: left!important;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .content p{
+      width: 80%;
+    }
+}
+
+@media (width <= 884px){
+    .shop{
+        display: grid;
+        place-items: center;
+    }
+    .shop .card{
+        width: 100%;
+        border: none;
+    }
+    header{
+        width: 100%;
+    }
+    .hero{
+        display: grid;
+        place-items: center;
+    }
+    .hero .content{
+        text-align: left!important;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .content p{
+      width: 80%;
+    }
+    .x{
+        gap: 7rem;
+    }
+    .x button {
+     padding: 20px;
+     width: 50%;
+     font-size: 2rem;
+    }
+}
